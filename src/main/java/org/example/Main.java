@@ -40,10 +40,10 @@ public class Main {
             JsonObject jsonObject1 = new Gson().fromJson(jsonArray.asList().get(0).toString(), JsonObject.class);
 
             String elev = String.valueOf(jsonObject1.get("elevation"));
-            System.out.println(elev);
+            System.out.println("Altitude  is: "+elev);
             double altitude = Double.parseDouble(elev);
             int elevation = (int) altitude;
-            System.out.println(elevation);
+            System.out.println("Elevation is: "+elevation);
         }
     }
 }
