@@ -6,7 +6,6 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -26,7 +25,7 @@ public class Main {
 
             //String json = "{\"results\": [{\"dataset\": \"mapzen\",\"elevation\": 55.0,\"location\": {\"lat\": 57.688709,\"lng\": 11.976404}}],\"status\": \"OK\"}";
 
-            JsonObject jsonObject = new Gson().fromJson(response.toString(), JsonObject.class);
+            //JsonObject jsonObject = new Gson().fromJson(response.toString(), JsonObject.class);
 
             //System.out.println(jsonObject.get("results"));
             //System.out.println(jsonObject.get("status"));
